@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xeno CRM - Campaign Creator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Xeno Mini CRM</h1>
+    <p>Create and manage marketing campaigns</p>
+  </header>
+
+  <main>
+    <section class="segment-builder">
+      <h2>Audience Segment Builder</h2>
+      <form id="segment-form">
+        <div class="rule">
+          <select>
+            <option>Spend</option>
+            <option>Visits</option>
+            <option>Inactive Days</option>
+          </select>
+          <select>
+            <option>></option>
+            <option><</option>
+            <option>=</option>
+          </select>
+          <input type="text" placeholder="Enter value" />
+        </div>
+
+        <div class="logic-toggle">
+          <label><input type="radio" name="logic" checked /> AND</label>
+          <label><input type="radio" name="logic" /> OR</label>
+        </div>
+
+        <button type="button">+ Add Rule</button>
+        <button type="submit">Preview Audience</button>
+      </form>
+    </section>
+
+    <section class="campaign-history">
+      <h2>Campaign History</h2>
+      <div class="campaign-list">
+        <div class="campaign">
+          <h3>Campaign #1</h3>
+          <p>Audience Size: 1023</p>
+          <p>Sent: 923 | Failed: 100</p>
+        </div>
+        <div class="campaign">
+          <h3>Campaign #2</h3>
+          <p>Audience Size: 2100</p>
+          <p>Sent: 1900 | Failed: 200</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Xeno CRM | Internship Assignment</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
