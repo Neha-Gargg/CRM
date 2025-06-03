@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: black;
+  color: #1e1e1e;
+}
+
+header {
+  background-color: rgb(66, 66, 194);
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Card-style containers */
+.segment-builder,
+.campaign-history {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.segment-builder h2,
+.campaign-history h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* Rule input area */
+.rule {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rule select,
+.rule input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+  color: #1e1e1e;
+  border: 1px solid #ccc;
+}
+
+/* AND/OR radio toggle */
+.logic-toggle {
+  margin-bottom: 1rem;
+}
+
+.logic-toggle label {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color:rgb(66, 66, 194);
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.5rem;
+  border: none;
+  background-color: rgb(66, 66, 194);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: rgb(66, 66, 194);
+}
+
+/* Campaign list */
+.campaign-list .campaign {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.campaign:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(66, 66, 194);
+  color: white;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+}
